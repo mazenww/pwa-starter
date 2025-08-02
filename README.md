@@ -1,35 +1,44 @@
-# PWA Starter
-
-[**Straight to Full Documentation**](https://docs.pwabuilder.com/#/starter/quick-start)
-
-The PWABuilder pwa-starter is our opinionated, best practices, production tested starter that we use to build all of our PWAs, including [PWABuilder itself](https://blog.pwabuilder.com/posts/introducing-the-brand-new-pwa-builder/)! The pwa-starter is a starter codebase, just like create-react-app or the Angular CLI can generate, that uses the PWABuilder team&#39;s preferred front-end tech stack. We also have a CLI tool to allow you to create a PWA template from the command line.
-
-## Jump Right In
-
-Install the PWABuilder CLI:
-
-`npm i -g @pwabuilder/cli`
-
-And create a new app with this command:
-
-`pwa create`
-
-And start your app locally with:
-
-`pwa start`
-
-And that's it! Good luck on your Progressive Web App adventure!
-
-## More Info
-
-[![Get started with the pwa-starter!](https://img.youtube.com/vi/u3pWKpmic_k/0.jpg)](https://www.youtube.com/watch?v=u3pWKpmic_k)
-
-With it you get an app that:
-- Has no build system to set up and no boilerplate code to add. Everything is included out of the box.
-- Has a Service Worker system using [Workbox](https://developers.google.com/web/tools/workbox/)
-- Scores close to 100 on Lighthouse out of the box
-- Has everything needed to be installable in the browser
-- Is ready to be package for the app stores using [PWABuilder](https://www.pwabuilder.com)
-- Uses the [Azure Static Web Apps CLI](https://azure.github.io/static-web-apps-cli) which enables emulating your production environment locally, and gets you ready for deploying to Azure Static Web Apps!
-
-and all with just a few button clicks 😊.
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>النجم للبلاستيك والخردوات</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #004080;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .logo span.G {
+      color: #ffcc00;
+    }
+    .logo span.N {
+      color: #00ccff;
+    }
+    .contact {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 16px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .product {
